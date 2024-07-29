@@ -21,7 +21,7 @@ app.use('/uploads',express.static('uploads'))
 const PORT=process.env.PORT || 5001
 
 
-mongoose.connect(process.env.DB_PATH+process.env.DB_NAME)
+mongoose.connect(process.env.DB_PATH)
 .then(()=>console.log("Connected!"));
 
 app.listen(PORT,()=>{
